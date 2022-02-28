@@ -9,10 +9,10 @@ mkdir openmmlab-repos/src
 # mmcv
 mkdir openmmlab-repos/mmcv
 git clone https://github.com/open-mmlab/mmcv.git openmmlab-repos/mmcv
-wget https://download.openmmlab.com/mmcv/dist/cu111/torch1.9.0/mmcv_full-1.4.6-cp37-cp37m-manylinux1_x86_64.whl -P openmmlab-repos/src
+wget https://download.openmmlab.com/mmcv/dist/cu111/torch1.10.0/mmcv_full-1.3.17-cp37-cp37m-manylinux1_x86_64.whl -P openmmlab-repos/src
 # mmdetection
 mkdir openmmlab-repos/mmdetection
-git clone https://github.com/open-mmlab/mmdetection.git openmmlab-repos/mmdetection
+git clone --branch v2.17.0 https://github.com/open-mmlab/mmdetection.git openmmlab-repos/mmdetection
 
 # download all requirements
 pip download -d openmmlab-repos/src -r openmmlab-repos/mmcv/requirements.txt
